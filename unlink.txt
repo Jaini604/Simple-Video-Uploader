@@ -1,0 +1,3 @@
+// After conversion, delete the original MOV file
+                            //await fs.promises.unlink(outputFilePath);
+                            //console.log('Original MOV file deleted after conversion.');

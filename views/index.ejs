@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <h1><%= title %></h1>
+
+    <!-- Video Upload Form -->
+    <form id="upload-form" enctype="multipart/form-data">
+        <label for="videoFile">Upload Video:</label>
+        <input type="file" id="videoFile" name="video" accept=".mov,.mp4" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Video Player Section -->
+    <div id="video-player" style="display:none;">
+        <h2>Video Uploaded and Converted</h2>
+        <!-- The video element will be dynamically updated after the video is uploaded and merged -->
+        <video id="video" controls>
+            <source id="video-source" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Include Scripts -->
+    <script src="/scripts.js"></script>
+</body>
+</html>
